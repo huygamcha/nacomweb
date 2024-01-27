@@ -1,0 +1,1355 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+.disable{
+    display: none;
+}
+.violet{
+    background-color: #7f1cc7;
+}
+.flex{
+    display: flex;
+}
+p{
+    margin-bottom: 0rem !important;
+}
+body{
+    height: 8100px;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 90;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.08);
+}
+
+.header__main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 26px;
+    height: 44px;
+    background: linear-gradient(to right, rgb(94, 43, 184), rgb(114, 132, 228));
+}
+.header__main-list{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+.header__main-item{
+    padding: 0px 3px;
+    font-weight: 600;
+    font-size: 13.8px;
+    letter-spacing: -0.078rem;
+    color: var(--white-color);
+}
+.wrap__radius{
+    background-color: var(--black-color);
+    color: #fff;
+    height: 31px;
+    width: 40px;
+    line-height: 32px;
+    border-radius: 44%;
+    text-align: center;
+    margin-top: -2px;
+    display: block;
+}
+.header__main-icon{
+    line-height: 12px;
+}
+.header__sub{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 28px; */
+    padding: 0 26px;
+    align-items: center;
+    height: 55px;
+    background-color: var(--white-color);
+}
+.header__sub-icon-first{
+    width: 26px;
+    height: 26px;
+}
+.header__sub-icon-second{
+    width: 15px;
+    height: 15px;
+}
+.header__sub-location{
+    text-align: center;
+}
+.header__sub-info{
+    font-size: 9px;
+}
+
+.container-item{
+    position: relative;
+}
+.container-img{
+    border-radius: 1.6rem;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: scale(1.1);
+    width: 100%;
+}
+.container-info{
+    left: 2.6rem;
+    position: absolute;
+    text-align: left;
+    top: 7.5rem;
+}
+.container-header{
+    color: #111;
+    font-family: "hnt-font";
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -.07rem;
+    overflow: hidden;
+    max-height: 7.2rem;
+    max-width: 14.3rem;
+}
+.container-sub{
+    
+    color: hsla(0,0%,7%,.8);
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -.05rem;
+    overflow: hidden;
+    margin-top: 0.8rem;
+    max-height: 3.5rem;
+    max-width: 15.3rem;
+    line-height: 1.4;
+}
+
+.icon-wrap{
+
+}
+.icon-item-detail{
+    height: 5.2rem;
+    margin: 0.9rem auto 0;
+    width: 5.2rem;
+}
+.icon-list{
+    width: max-contentß;
+}
+.icon-item{
+}
+.icon-item-detail-icon{
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+#icon {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 5px;
+    box-sizing: border-box;
+    height: 9.5rem;
+    width: 100%;
+    background-color: #fff;
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    padding: 1rem 2.6rem;
+  }
+  
+  #icon > div {
+    background-color: #f5f5f5;
+    height: 6.5rem;
+    padding: 5px;
+    border-radius: 0.8rem;
+  }
+  .icon-detail{
+    height: 5.5rem;
+  }
+ /* Ẩn thanh cuộn trên Chrome, Edge và các trình duyệt tương tự */
+#icon::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ẩn thanh cuộn trên Firefox */
+  #icon {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .icon-item{
+    position: relative;
+    /* background-color: red; */
+    /* margin: 2px; */
+  }
+  .tag-icon{
+    border-radius: 1.7rem;
+    color: #fff;
+    display: inline-block;
+    font-size: .8rem;
+    right: 0;
+    letter-spacing: -.04rem;
+    line-height: 1;
+    max-width: 6rem;
+    min-width: 2.1rem;
+    padding: 0.4rem 0.4rem 0.3rem;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: -moz-fit-content;
+    width: fit-content;
+    word-break: break-all;
+    z-index: 2;
+    background-color: #834fe0;
+  }
+.icon-content{
+
+}
+
+.after-like{
+    padding: 1.2rem 2.6rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+.after-like-item{
+    border-left: 1px solid transparent;
+    height: 5rem;
+    width: 33.3%;
+}
+.after-like-des{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: transparent;
+    background-color: rgba(69,133,255,.08);
+    color: #111;
+    cursor: pointer;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    height: inherit;
+    letter-spacing: -.078rem;
+    padding-top: 1.6rem;
+    text-align: center;
+}
+.tag-sub{
+    font-size: 1.1rem;
+    height: 1.2rem;
+    letter-spacing: -.06rem;
+    line-height: 1.1;
+    overflow: hidden;
+    display: block;
+    height: 1.3rem;
+    margin-top: 0.6rem;
+    width: 100%;
+    text-align: center;
+}
+
+.location-content{
+
+}
+.location-list{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.location-item{
+    width: 7.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: transparent;
+    background-color: transparent;
+    border-radius: 0;
+    height: auto;
+    margin-left: 0;
+    padding-bottom: 1.4rem;
+    padding-top: 1rem;
+}
+.location-img{
+    height: 3.6rem;
+    width: 3.6rem;
+}
+.location-des{
+    color: #111;
+    font-size: 1.1rem;
+    height: 1.9rem;
+    letter-spacing: -.048rem;
+    padding-top: 0.6rem;
+}
+
+
+#icon-second {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    box-sizing: border-box;
+    height: 18.5rem;
+    width: 100%;
+    background-color: #fff;
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    padding: 1rem 2.6rem 1rem 2.6rem;
+}
+
+.icon-detail-second{
+    background: #f2f2f2 url(https://image.hanatour.com/usr/static/img2/mobile/com/noimage.png) 50%/5rem auto no-repeat;
+    border-radius: 1rem;
+    display: block;
+    height: 13.2rem;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 14.8rem;
+}
+
+  #icon-second > div {
+    height: 13.2rem;
+    padding: 5px;
+    border-radius: 0.8rem;
+  }
+ 
+   /* Ẩn thanh cuộn trên Chrome, Edge và các trình duyệt tương tự */
+#icon-second::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ẩn thanh cuộn trên Firefox */
+  #icon-second {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+.icon-item-second:first-child{
+    padding: 5px 5px 0px;
+}
+
+.discount{
+    padding:2.6rem;
+    position: relative;
+    background-color: #f5f5f5;
+}
+.discount-header{
+    max-height: 4.7rem;
+    width: 19.5rem;
+    margin-bottom: 1.2rem;
+}
+.discount-heading{
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+    margin-left: 2.6rem;
+}
+.discount-img-icon{
+   
+    background: #f2f2f2 url(https://image.hanatour.com/usr/static/img2/mobile/com/noimage.png) 50%/5rem auto no-repeat;
+    /* border-radius: 1.5rem; */
+    display: block;
+    height: 22rem;
+    /* margin-bottom: 1.6rem; */
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+.discount-icon{
+    border-radius: 1.5rem;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}
+.discount-info{
+    display: flex;
+    flex-direction: column;
+}
+.discount-info-header{
+    color: #111;
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: -1.14px;
+    line-height: 2.25rem;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+    position: relative;
+    margin-top: 1.2rem;
+}
+.discount-info-des{
+    color: #999;
+    font-size: 1.3rem;
+    letter-spacing: -.78px;
+    margin-bottom: 0.8rem;
+    margin-top: 0.4rem;
+    padding: 0 1rem;
+}
+
+.discount-price{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.discount-price-one{
+    font-size: 1.6rem;
+    margin-right: 0.4rem;
+    color: #ff299c;
+    font-weight: 700;
+}
+.discount-price-two{
+    font-size: 1.6rem;
+    margin-right: 0.4rem;
+    font-weight: 700;
+}
+.discount-price-three{
+    font-size: 1.4rem;
+    color: #888;
+    font-weight: 700;
+
+}
+.discount-timing{
+    background-color: #302f31;
+    border-radius: 3.2rem;
+    color: #fff;
+    font-size: 2.1rem;
+    letter-spacing: -1px;
+    padding: 0.6rem 3rem 0.7rem 3rem;
+    text-align: center;
+    width: 100%;
+}
+.timing-wrap{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: -.7px;
+    line-height: 1.7;
+    padding-left: 2rem;
+    position: relative;
+    vertical-align: top;
+    margin: 0 4rem;
+    
+}
+.timing-icon{
+    background-image: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_watch_02.png);
+    background-size: 1.6rem auto;
+    content: "";
+    display: block;
+    height: 1.6rem;
+    left: -2px;
+    opacity: .7;
+    position: absolute;
+    top: 0.7rem;
+    width: 1.6rem;
+}
+.timing-quality{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+.timing-time{
+    letter-spacing: .01rem;
+    padding: 0 0.4rem;
+}
+.timing-des{
+    color: #fff;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    opacity: .7;
+    vertical-align: middle;
+}
+.timing-time-des{
+    letter-spacing: .01rem;
+    padding: 0 0.4rem;
+    font-size: 1.6rem;
+}
+
+.combo{
+
+}
+.combo-header{
+    padding: 0 2.6rem;
+   position: relative;
+}
+.combo-header-img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+.combo-header-icon{
+    max-height: 4.7rem;
+    width: 19.5rem;
+}
+.combo-header-des{
+    background: url(https://image.hanatour.com/usr/static/img2/mobile_dcr/main/ico_arrow_right_s24.png) right 0.2rem/1.2rem no-repeat;
+    bottom: -0.1rem;
+    color: #111;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-right: 1.2rem;
+    position: absolute;
+    right: 2.6rem;
+}
+
+
+#icon-third {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 14px;
+    box-sizing: border-box;
+    height: 31.5rem;
+    width: 100%;
+    background-color: #fff;
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    padding: 1rem 0rem 1rem 2.6rem;
+}
+.icon-detail-third{
+    background: #f2f2f2 url(https://image.hanatour.com/usr/static/img2/mobile/com/noimage.png) 50%/5rem auto no-repeat;
+    border-radius: 1rem;
+    display: block;
+    height: 15rem;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 25.8rem;
+}
+
+  #icon-third > div {
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 3px 13px 0 hsla(0,0%,7%,.08);
+  }
+ 
+   /* Ẩn thanh cuộn trên Chrome, Edge và các trình duyệt tương tự */
+#icon-third::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ẩn thanh cuộn trên Firefox */
+  #icon-third {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+.combo-location{
+    position: relative;
+}
+.combo-location-header{
+
+}
+.combo-location-img{
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_location_line_04.png) 50%/110% auto no-repeat;
+    content: "";
+    display: block;
+    height: 1.4rem;
+    left: 0.5rem;
+    position: absolute;
+    top: 0.3rem;
+    width: 1.4rem;
+}
+.combo-location-wrap{
+    background-color: rgba(51,51,51,.6);
+    border: 0.5px solid hsla(0,0%,7%,.2);
+    border-radius: 2.5rem;
+    height: 2rem;
+    left: 1.6rem;
+    line-height: 2rem;
+    padding: 0 0.8rem;
+    position: absolute;
+    top: 1.2rem;
+}
+.combo-location-header{
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -.07rem;
+    max-width: 8rem;
+    overflow: hidden;
+    padding-left: 1.2rem;
+    position: relative;
+    text-overflow: ellipsis;
+    text-shadow: 0 0.5px 1px rgba(0,0,0,.4);
+    white-space: nowrap;
+}
+.combo-location-map{
+    height: 10rem;
+    position: absolute;
+    right: 1.6rem;
+    top: -6.8rem;
+    width: 10rem;    
+}
+.combo-location-sub{
+    margin-top: 5rem;
+    height: 4.3rem;
+    letter-spacing: -.72px;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.36rem;
+    color: #111;
+    max-width: 22rem;
+    margin-left: 2rem;
+    overflow: hidden;
+}
+
+.combo-quality{
+    display: flex;
+    justify-content: space-between;    
+    padding: 0px 1.2rem 0px 1.4rem;
+
+}
+.combo-avatar{
+    display: flex;
+    font-weight: 600;
+    line-height: 1.6rem;    
+}
+.combo-avatar-img{
+    border-radius: 100%;
+    display: inline-block;
+    height: 1.7rem;
+    margin-right: 2px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 1.7rem;
+}
+.combo-avatar-des{
+    color: #888;
+    font-size: 1.2rem;
+    letter-spacing: -.5px;
+}
+.combo-rate{
+    display: flex;
+    align-items: center;
+
+}
+.combo-view{
+    display: flex;
+    align-items: center;
+
+}
+.combo-view-img{
+    background-image: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_view_line_03.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 1.4rem;
+    width: 1.4rem;
+}
+.combo-view-quality{
+    color: #666;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-left: 0.2rem;
+    padding-right: 0.6rem;
+}
+.combo-down{
+    display: flex;
+    align-items: center;
+}
+.combo-down-img{
+    background-image: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_download_line_93.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 1.4rem;
+    width: 1.4rem;
+    
+}
+.combo-down-quality{
+    color: #666;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-left: 0.2rem;
+    padding-right: 0.6rem;
+}
+
+.add-new{
+    width: 25.8rem;
+    height: 36.5rem;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-new-header{
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: -.7px;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.add-new-button{
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -.52px;
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+    margin-bottom: 3.7rem;
+    padding: 1.2rem 4rem;
+    border-radius: 5.5rem;
+}
+
+.add-new-button a{
+    text-decoration: none;
+}
+.add-new-link a{
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.trend-trip-img{
+    width: 390px;
+    height: 150px;
+    /* object-fit: cover; */
+}
+.discount-second{
+    padding: 2.6rem 0;
+}
+.discount-icon-second{
+    border-radius: 0;
+   
+}
+.discount-info-second{
+    padding: 1.2rem 2.6rem 0rem;
+    flex-direction: column;
+}
+.discount-info-des-second{
+    color: #111;
+    font-weight: 600;
+    height: auto;
+    line-height: 1.28;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+.discount-info-header-second{
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: -.44px;
+    float: left;
+    white-space: nowrap;
+    color: #aaa;
+}
+.discount-img-icon-trend{
+    height: 27rem;
+    position: relative;
+}
+.trend-wrap{
+    border: 1px solid #fff;
+    /* border-radius: 2.5rem; */
+    font-size: 1.2rem;
+    height: 2.9rem;
+    line-height: 2.9rem;
+    margin: 0 0.3rem;
+    padding: 0 1.3rem;
+    z-index: 2;
+}
+.trend-wrap-header{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+.trend-wrap-img{
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/livecm/icon-alarm-solid.png) 0 0/100% no-repeat;
+    height: 1.2rem;
+    margin: 0.5rem 0.5rem 0;
+    width: 1.2rem;
+}
+.trend-img::after{
+    content: '';
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0,0%,7%,.4);
+    z-index: 1;
+}
+
+.add-new-trend{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    right: 0;
+    color: #fff;
+    top: 35%;
+    left: 0;
+    font-size: 1.7rem;
+    letter-spacing: -.72px;
+    font-weight: 500;
+}
+.coming-soon{
+    background-color: #7f1cc7;
+    border-radius: 0;
+    border: 0;
+    height: 2.4rem;
+    line-height: 2.7rem;
+    margin: 0 0.3rem;
+    padding: 0px 0.9rem;
+}
+.coming-soon-header{
+    font-size: 0.9rem;
+    padding-left: 0;
+      
+}
+
+.trend-after-time{
+    position: absolute;
+    top: 60%;
+    left: 39%;
+}
+.trend-header{
+   position: relative;
+}
+.trend-heading{
+    position: absolute;
+    top: 4px;
+    right: -100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 2.6rem;
+}
+.icon-third-pick{
+    display: grid;
+}
+
+.pick{
+  width: calc(100% - 5.2rem);   
+  justify-content: center;
+  margin-left: 2.6rem;
+}
+.pick-item{
+    width: 100%;
+    position: relative;
+}
+.pick-img{
+    width: 100%;
+    height: 16rem;
+    border-radius: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.pick-wrap{
+    left: 32rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+.pick-wrap-heading{
+        font-size: 1.2rem;
+        padding-left: 0;
+
+}
+.pick-label{
+    bottom: 36%;
+    color: #fff;
+    display: flex;
+    font-size: 1.1rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    padding: 0 1rem;
+    position: absolute;
+    margin-left: 2rem;
+    border-radius: 4px;
+}
+.pick-label-header{
+    font-weight: 700;
+}   
+
+.pick-info{
+    padding: 1.6rem 2rem 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 3px 13px 0 hsla(0,0%,7%,.08);
+}
+.pick-header{
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: -.76px;
+    line-height: 1.9rem;
+}
+.pick-sub{
+    color: #999;
+    font-size: 1.3rem;
+    letter-spacing: -.72px;
+    line-height: 1.4;
+    margin: 0.4rem 0 0.8rem;
+}
+.pick-price{
+    font-size: 1.6rem;
+    margin-right: 0.4rem;
+    font-weight: 700;
+}
+
+.pick-default-right{
+    position: relative;
+}
+.pick-wrap-info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(51,51,51,.6);
+    border: 0.5px solid hsla(0,0%,7%,.2);
+    border-radius: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.8rem;
+}
+.pick-wrap-info-img{
+
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_location_line_04.png) 50%/110% auto no-repeat;
+        display: block;
+        height: 1.4rem;
+        width: 1.4rem;
+}
+.banner{
+    background: #f5f5f5;
+    padding-bottom: 5rem;
+    margin-top: 3rem;
+    position: relative;
+    /* display: grid;    */
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap: 14px; */
+}
+.banner-img{
+    height: 37.6rem;
+    /* margin-left: 2.6rem; */
+    width:  calc(100% - 5.2rem);
+}
+.banner-header{
+
+}
+.banner-heading{
+    color: #fff;
+    font-family: "hnt-font";
+    font-size: 2.6rem;
+    font-weight: 400;
+    letter-spacing: -.015rem;
+    line-height: 1.27;
+    margin: 0 5.2rem;
+    padding-top: 2.05rem;
+    position: absolute;
+    top: 18.8rem;
+}
+.banner-heading::before{
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_quotation_solid_03.png);
+    background-size: 100% auto;
+    content: "";
+    display: block;
+    height: 1.2rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1.2rem;
+}
+.banner-sub{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    color: #fff;
+    display: -webkit-box;
+    font-size: 1.3rem;
+    letter-spacing: -.078rem;
+    margin: 0 5.2rem;
+    opacity: .7;
+    overflow: hidden;
+    padding-top: 0.8rem;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 27.3rem;
+}
+.banner-calendar{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.16);
+    height: auto;
+    padding: 1rem 1.2rem;
+    position: absolute;
+    right: 2.6rem;
+    text-align: center;
+    top: 2.6rem;
+    margin-right: 2.6rem;
+}
+.banner-calender-year{
+  
+        color: #111;
+        font-size: 1.1rem;
+        font-weight: 500;
+    
+}
+.banner-calender-month{
+    color: #111;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+}
+ul.slick-dots {
+    font-size: 0;
+    line-height: 1;
+    list-style: none;
+    padding-top: 1.4rem;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+ul.slick-dots li {
+    background: rgba(0,0,0,.1);
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-block;
+    height: .6rem;
+    margin: 0 4px;
+    vertical-align: middle;
+    width: .6rem;
+}
+ul.slick-dots li button {
+    font-size: 0;
+}
+.carousel-indicators .active {
+    background-color: #5e2bb8 !important;
+}
+.tit-wrap{
+    -webkit-tap-highlight-color: initial;
+}
+.tit-wrap-header{
+    color: #111;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -1.02px;
+    line-height: 1.4;
+    margin-top: 2rem;
+
+    padding-left: 2.6rem;
+}
+.tit-wrap-info{
+
+}
+.tit-wrap-heading{
+    background-color: #fff;
+    color: #111;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    height: auto;
+    letter-spacing: -.44px;
+    line-height: 1.36rem;
+    margin-right: 0.3rem;
+    margin-top: 1rem;
+    padding: 0;
+    vertical-align: middle;
+}
+.tit-wrap-sub{
+    color: #111;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    line-height: 1.33;
+    margin-top: 0.3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 1rem;
+}
+.tit-wrap-price{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+.tit-wrap-img{
+    background: #f7f7f7 url(https://image.hanatour.com/usr/static/img2/mobile/com/noimage.png) 50%/50% no-repeat;
+    border-radius: 1rem;
+    display: block;
+    height: 13.2rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 14.8rem;
+}
+.tit-wrap-img-detail{
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}
+.tower{
+    position: relative;
+}
+.tower-img{
+    position: relative;
+    background-image: url(https://image.hanatour.com/usr/manual/mo/main/ms_bnr/ms_bnr042.jpg);
+    background-size: 100% 17.1rem;
+    height: 17.1rem;
+    margin-top: 4rem;
+}
+.tower-info{
+    position: absolute;
+    top: rem;
+    left: 2.6rem;
+    width: 80%;
+}
+.tower-info-header,
+.tower-info-sub-main{
+    
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: -.156rem;
+    line-height: 1.29;
+    margin-bottom: 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    width: 75%;
+}
+.tower-info-sub {
+
+}
+.tower-info-sub-main{
+
+}
+.tower-info-sub-des{
+    color: #fff;
+    display: inline-block;
+    flex: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: -.48px;
+    line-height: 3rem;
+    margin-top: 0;
+    padding: 0;
+    width: auto;
+}
+
+#tower-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 2.6rem;
+    position: absolute;
+    top: 70%;
+}
+.tower-item{
+    width: calc( (100% - 2rem ) / 3);
+}
+.tower-item-img{
+    border-radius: 0.8rem;
+    height: 10rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+.tower-wrap-info{
+
+}
+.tower-wrap-heading{
+    color: #111;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -.78px;
+    line-height: 1.38;
+    margin: 0.8rem 0 0.2rem;
+}
+.tower-wrap-sub{
+    color: #999;
+    font-size: 1.2rem;
+    letter-spacing: -.72px;
+    line-height: 1.42;
+    overflow: hidden;
+}
+.tit-wrap-img-second,
+.tit-container{
+    width: 18rem;
+    height: 18rem;
+    position: relative;
+}
+.tit-container{
+    background-color: #fff;
+    box-shadow: 0 3px 13px 0 hsla(0,0%,7%,.08);
+
+
+}
+.tit-img-second{
+    width: 100%;
+    height: 100%;
+}
+.tit-wrap-img-second::after{
+    position: absolute;
+    content: '';
+    border-radius: 1rem;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: -2px 3px 8px 0 rgba(0,0,0,0.3);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); /* Đặt lớp phủ bằng gradient mờ */
+  
+}
+.tit-wrap-img-second::after.last{
+    position: absolute;
+    content: '';
+    border-radius: 1rem;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: -2px 3px 8px 0 rgba(0,0,0,0.3);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); Đặt lớp phủ bằng gradient mờ */
+  
+}
+.icon-item-second{
+    
+}
+.tit-wrap-info-second{
+    position: absolute;
+    margin-left: 2.6rem;
+    margin-top: 2.6rem;
+    top: 0;
+    left: 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 0.7rem;
+    z-index: 2;
+}
+.tit-content{
+    width: 18rem;
+    height: 18rem;
+    background-color: #fff;
+    position: relative;
+}
+.tit-content-header{
+    position: absolute;
+    flex-direction: column;
+    top: 30%;
+    left: 18%;
+    align-items: center;
+    color: #111;
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 1.4rem;
+}
+.tit-content-sub{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5.5rem;
+    font-weight: 500;
+    letter-spacing: -.7px;
+    padding: 1rem 1.7rem;
+    /* padding: 0.9rem 4.9rem; */
+    color: #4585ff;
+    top: 56%;
+    left: 11%;
+    line-height: 1.3;
+    font-size: 1.3rem;
+}
+.footer{
+    padding: 1rem 0rem 3rem 0rem;
+}
+.footer-list{
+    justify-content: space-between;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+    border-top: 1px solid rgb(102, 102, 102);
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.footer-item{
+    width: calc( (100%)/ 3);
+    text-align: center;
+    display: block;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(17, 17, 17);
+}
+.footer-item:not(:last-child){
+    border-right: 1px solid rgb(221, 221, 221);
+
+}
+.link{
+    padding: 0px 16px 10px;
+}
+.link-list{
+
+}
+.link-item{
+    display: inline-block;
+    padding-left: 9px;
+    margin-right: 6px;
+    font-size: 14px;  
+}
+.link-item a{
+    color: rgb(102, 102, 102);
+}
+.link-item:nth-child(2) a {
+    color: rgb(17, 17, 17);
+    font-weight: 600;
+}
+
+.about{
+   padding: 20px; 
+   padding-left: 25px;
+
+}
+.toggle{
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_acc_down.png) 100% 50% / 13px no-repeat rgb(255, 255, 255);
+    display: inline-block;
+    padding: 0px 16px 0px 0px;
+    font-size: 14px;
+}
+.copy-right{
+    padding: 20px; 
+   padding-left: 25px;
+   font-size: 12px;
+   line-height: 19px;
+}
+.copy-right-header{
+}
+.copy-right-sub{
+    margin: 0 auto;
+}
+
+#scroll-nav{
+    display: none ;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.08);
+}
+.scroll-nav-list{
+    justify-content: space-between;
+    padding: 1rem 2.6rem;
+    align-items: center;
+    height: 56px;
+   
+}
+.scroll-nav-item{
+    color: #111;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#scroll-nav{
+    animation: FadeIn 0.4s linear ;
+    
+}
+#scroll-nav.flex{
+    display: block;
+    animation: FadeIn 0.4s linear ;
+}
+.header__main{
+    animation: FadeIn 0.1s linear ;
+}
